@@ -1,0 +1,10 @@
+parameters:
+  ip_restrict:
+    enabled: true
+    ipAddresses: ['127.0.0.1', 'fe80::1', '::1']
+services:
+  ip_restrict.middleware:
+    class: Alsar\Stack\IpRestrict
+    arguments: ['%ip_restrict%']
+    tags:
+      - { name: http_middleware }

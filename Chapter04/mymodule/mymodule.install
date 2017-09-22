@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Provides update hooks for My Module
+ */
+
+/**
+ * Update "Contact Us" form to have a reply message.
+ */
+function mymodule_update_8001() {
+  $contact_form = \Drupal\contact\Entity\ContactForm::load('contactus');
+  $contact_form->setReply(t('Thank you for contacting us, we will reply shortly'));
+  $contact_form->save();
+}

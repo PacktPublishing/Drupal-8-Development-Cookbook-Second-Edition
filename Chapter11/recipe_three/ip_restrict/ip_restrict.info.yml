@@ -1,0 +1,4 @@
+name: IP Restrict
+type: module
+description: Restricts access to the Drupal site based on allowed IP addresses
+core: 8.x

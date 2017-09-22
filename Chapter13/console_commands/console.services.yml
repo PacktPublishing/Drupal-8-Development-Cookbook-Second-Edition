@@ -1,0 +1,7 @@
+services:
+  console_commands.console_commands_disable_users:
+    class: Drupal\console_commands\Command\DisableUsersCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+

@@ -1,0 +1,10 @@
+{
+  "name": "drupal/ip_restrict",
+  "type": "drupal-module",
+  "description": "Implements stack middleware for IP restrict",
+  "license": "GPL-2.0+",
+  "require": {
+    "alsar/stack-ip-restrict": "^~1"
+  },
+  "minimum-stability": "dev"
+}
